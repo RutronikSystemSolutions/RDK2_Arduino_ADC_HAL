@@ -108,7 +108,7 @@ int main(void)
         handle_error();
     }
     printf("\x1b[2J\x1b[;H");
-    printf("RDK2 Arduino ADC DMA HAL Example.\r\n");
+    printf("RDK2 Arduino ADC HAL Example.\r\n");
 
     /*Initialize LEDs*/
     result = cyhal_gpio_init( LED1, CYHAL_GPIO_DIR_OUTPUT, CYHAL_GPIO_DRIVE_STRONG, CYBSP_LED_STATE_OFF);
