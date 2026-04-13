@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration app="BACKEND" formatVersion="14" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.50.0" toolsPackage="ModusToolbox 3.5.0" xmlns="http://cypress.com/xsd/cydesignfile_v5">
+<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.70.0" toolsPackage="ModusToolbox 3.7.0" xmlns="http://cypress.com/xsd/cydesignfile_v7">
     <Devices>
         <Device mpn="CY8C6245AZI-S3D72">
             <BlockConfig>
@@ -343,7 +343,7 @@
                         <Alias value="USB_DEV"/>
                     </Aliases>
                 </Block>
-                <Personality template="dap" version="2.0">
+                <Personality template="dap" version="2.0" instance="pC-Bic2JvJo">
                     <Block location="cpuss[0].dap[0]" locked="true"/>
                     <Parameters>
                         <Param id="dbgMode" value="SWD"/>
@@ -351,7 +351,7 @@
                         <Param id="traceModeSerial" value="false"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="H7B3QJzKXBk">
                     <Block location="ioss[0].port[0].pin[0]" locked="true">
                         <Aliases>
                             <Alias value="WCO_IN"/>
@@ -371,7 +371,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="d8KT6wW48z4">
                     <Block location="ioss[0].port[0].pin[1]" locked="true">
                         <Aliases>
                             <Alias value="WCO_OUT"/>
@@ -391,7 +391,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="Ch0SGBV1_JQ">
                     <Block location="ioss[0].port[6].pin[4]" locked="true">
                         <Aliases>
                             <Alias value="TDO_SWO"/>
@@ -411,7 +411,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="O2kMZWwaPRA">
                     <Block location="ioss[0].port[6].pin[5]" locked="true">
                         <Aliases>
                             <Alias value="TDI"/>
@@ -431,7 +431,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="5LCL4LmJSiM">
                     <Block location="ioss[0].port[6].pin[6]" locked="true">
                         <Aliases>
                             <Alias value="SWDIO"/>
@@ -451,7 +451,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="AU2gE0jg224">
                     <Block location="ioss[0].port[6].pin[7]" locked="true">
                         <Aliases>
                             <Alias value="SWCLK"/>
@@ -471,7 +471,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="aEwq-cs2XDw">
                     <Block location="ioss[0].port[12].pin[6]" locked="true">
                         <Aliases>
                             <Alias value="ECO_IN"/>
@@ -491,7 +491,7 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pin" version="3.0">
+                <Personality template="pin" version="3.0" instance="p2buGV20XHM">
                     <Block location="ioss[0].port[12].pin[7]" locked="true">
                         <Aliases>
                             <Alias value="ECO_OUT"/>
@@ -511,23 +511,23 @@
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                     </Parameters>
                 </Personality>
-                <Personality template="sysclocks" version="3.0">
+                <Personality template="sysclocks" version="3.0" instance="DWV8qbZjD_E">
                     <Block location="srss[0].clock[0]" locked="true"/>
                 </Personality>
-                <Personality template="altsystick" version="3.0">
+                <Personality template="altsystick" version="3.0" instance="kq5T93CuZLA">
                     <Block location="srss[0].clock[0].altsystickclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="interval" value="0"/>
                         <Param id="sourceClock" value="eco"/>
                     </Parameters>
                 </Personality>
-                <Personality template="bakclk" version="3.0">
+                <Personality template="bakclk" version="3.0" instance="I0K2wNZrIJ4">
                     <Block location="srss[0].clock[0].bakclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="lfclk"/>
                     </Parameters>
                 </Personality>
-                <Personality template="eco" version="3.0">
+                <Personality template="eco" version="3.0" instance="nPQFLWd4bio">
                     <Block location="srss[0].clock[0].eco[0]" locked="true"/>
                     <Parameters>
                         <Param id="accuracyPpm" value="100"/>
@@ -538,7 +538,7 @@
                         <Param id="esr" value="50"/>
                     </Parameters>
                 </Personality>
-                <Personality template="fastclk" version="2.0">
+                <Personality template="fastclk" version="2.0" instance="L05L4qv7x_c">
                     <Block location="srss[0].clock[0].fastclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider" value="1"/>
@@ -546,7 +546,7 @@
                         <Param id="intDivider" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="fll" version="4.0">
+                <Personality template="fll" version="4.0" instance="TFxq-MKDhho">
                     <Block location="srss[0].clock[0].fll[0]" locked="true"/>
                     <Parameters>
                         <Param id="configuration" value="auto"/>
@@ -554,7 +554,7 @@
                         <Param id="enableOutputDivider" value="false"/>
                     </Parameters>
                 </Personality>
-                <Personality template="hfclk" version="3.0">
+                <Personality template="hfclk" version="4.0" instance="LuTspmvSCTQ">
                     <Block location="srss[0].clock[0].hfclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
@@ -562,10 +562,10 @@
                         <Param id="actionCsv" value="FAULT"/>
                         <Param id="divider" value="1"/>
                         <Param id="sourceClockCsv" value="IMO"/>
-                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="hfclk" version="3.0">
+                <Personality template="hfclk" version="4.0" instance="yuK3e6Jy7wo">
                     <Block location="srss[0].clock[0].hfclk[1]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
@@ -576,7 +576,7 @@
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="hfclk" version="3.0">
+                <Personality template="hfclk" version="4.0" instance="duJjFtPqI1Q">
                     <Block location="srss[0].clock[0].hfclk[2]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
@@ -587,7 +587,7 @@
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="hfclk" version="3.0">
+                <Personality template="hfclk" version="4.0" instance="t7pMQga23nI">
                     <Block location="srss[0].clock[0].hfclk[3]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
@@ -598,7 +598,7 @@
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="hfclk" version="3.0">
+                <Personality template="hfclk" version="4.0" instance="KQpZGjEVzEw">
                     <Block location="srss[0].clock[0].hfclk[4]" locked="true"/>
                     <Parameters>
                         <Param id="ClkHfCsv" value="false"/>
@@ -609,13 +609,13 @@
                         <Param id="sourceClockNumber" value="0"/>
                     </Parameters>
                 </Personality>
-                <Personality template="imo" version="3.0">
+                <Personality template="imo" version="3.0" instance="Gx--AjhG_CM">
                     <Block location="srss[0].clock[0].imo[0]" locked="true"/>
                     <Parameters>
                         <Param id="trim" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="lfclk" version="3.0">
+                <Personality template="lfclk" version="3.0" instance="CdSJNbPWMYg">
                     <Block location="srss[0].clock[0].lfclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="ClkLfCsv" value="false"/>
@@ -624,72 +624,72 @@
                         <Param id="sourceClockCsv" value="IMO"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pathmux" version="3.0">
+                <Personality template="pathmux" version="3.0" instance="mSHusS9yFt0">
                     <Block location="srss[0].clock[0].pathmux[0]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="eco"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pathmux" version="3.0">
+                <Personality template="pathmux" version="3.0" instance="cKURxdiQu44">
                     <Block location="srss[0].clock[0].pathmux[1]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="eco"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pathmux" version="3.0">
+                <Personality template="pathmux" version="3.0" instance="vQGB3WQKvY0">
                     <Block location="srss[0].clock[0].pathmux[2]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="imo"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pathmux" version="3.0">
+                <Personality template="pathmux" version="3.0" instance="6TiYoNqc0ro">
                     <Block location="srss[0].clock[0].pathmux[3]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="imo"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pathmux" version="3.0">
+                <Personality template="pathmux" version="3.0" instance="8kwKG_Y2kmk">
                     <Block location="srss[0].clock[0].pathmux[4]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="imo"/>
                     </Parameters>
                 </Personality>
-                <Personality template="periclk" version="2.0">
+                <Personality template="periclk" version="2.0" instance="aO9Zr132OiU">
                     <Block location="srss[0].clock[0].periclk[0]" locked="true"/>
                     <Parameters>
-                        <Param id="divider" value="1"/>
+                        <Param id="divider" value="2"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pll" version="3.0">
+                <Personality template="pll" version="3.0" instance="sVVhaMbpL94">
                     <Block location="srss[0].clock[0].pll[0]" locked="true"/>
                     <Parameters>
                         <Param id="configuration" value="auto"/>
-                        <Param id="desiredFrequency" value="96.000"/>
+                        <Param id="desiredFrequency" value="150.000"/>
                         <Param id="lowFrequencyMode" value="false"/>
                         <Param id="optimization" value="MinPower"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pumpclk" version="3.0">
+                <Personality template="pumpclk" version="3.0" instance="0U14G0wKpZ0">
                     <Block location="srss[0].clock[0].pumpclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider" value="1"/>
                         <Param id="sourceClockNumber" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="slowclk" version="2.0">
+                <Personality template="slowclk" version="2.0" instance="tCWe-gKdZJw">
                     <Block location="srss[0].clock[0].slowclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="timerclk" version="3.0">
+                <Personality template="timerclk" version="3.0" instance="4hPS6L5Knzg">
                     <Block location="srss[0].clock[0].timerclk[0]" locked="true"/>
                     <Parameters>
                         <Param id="sourceClock" value="imo"/>
                         <Param id="timerDivider" value="1"/>
                     </Parameters>
                 </Personality>
-                <Personality template="wco" version="3.0">
+                <Personality template="wco" version="3.0" instance="e7QGnUwrJek">
                     <Block location="srss[0].clock[0].wco[0]" locked="true"/>
                     <Parameters>
                         <Param id="accuracyPpm" value="150"/>
@@ -700,7 +700,7 @@
                         <Param id="lossWindow" value="CY_SYSCLK_CSV_LOSS_4_CYCLES"/>
                     </Parameters>
                 </Personality>
-                <Personality template="power" version="1.3">
+                <Personality template="power" version="1.3" instance="o-n2pA7leUA">
                     <Block location="srss[0].power[0]" locked="true"/>
                     <Parameters>
                         <Param id="actPwrMode" value="LP"/>

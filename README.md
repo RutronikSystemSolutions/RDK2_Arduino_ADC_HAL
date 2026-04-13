@@ -2,17 +2,17 @@
 
 Rutronik Development Kit Programmable System-on-Chip CY8C6245AZI-S3D72 "Arduino ADC HAL" Example. 
 
-This example demonstrates how to use HAL library to measure all the ADC channels on the Arduino ADC header. 
+This example demonstrates how to use the HAL library to measure all the ADC channels on the Arduino ADC header. 
 
 <img src="images/rdk2_rev1.jpg" style="zoom:80%;" />
 
 ## Requirements
 
-- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v2025.4.0** [built with **v3.0**]
+- [ModusToolbox® software](https://www.infineon.com/cms/en/design-support/tools/sdk/modustoolbox-software/) **v3.7** [built with **v3.0**]
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -129,7 +129,7 @@ The firmware example uses KitProg3 Debug UART for the debug output. The ADC peri
 static void adc_continuous_event_handler(void* arg, cyhal_adc_event_t event)
 ```
 
-The ADC initialization is done in a function:
+The ADC initialisation is done in a function:
 
 ```
 cy_rslt_t app_hw_init(void)
@@ -141,7 +141,7 @@ The data is read from the data array and printed to the terminal every second:
 
 ### Debugging
 
-If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3, MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 and MiniProg4. Open the ModusToolbox perspective and find the Quick Panel. Click the desired debug launch configuration, then wait for programming to complete and debugging to start.
 
 <img src="images/debugging.png" style="zoom:100%;" />
 
